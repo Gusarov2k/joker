@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :joke do
-    story { 'MyText' }
-    minute_mark { 1 }
+    story { Faker::Name.unique.name }
+    minute_mark { Faker::Number.within(range: 0.0..1440.0).round(0) }
   end
 end

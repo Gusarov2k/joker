@@ -4,7 +4,7 @@ class WriteJokes
   include Interactor
 
   before do
-    context.fail! error: 'Empty jokes' if context.jokes.nil? || context.jokes.empty?
+    context.fail! error: I18n.t('messages.empty_jokes') if context.jokes.nil? || context.jokes.empty?
   end
 
   def call

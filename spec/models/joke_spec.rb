@@ -3,5 +3,10 @@
 require 'rails_helper'
 
 RSpec.describe Joke, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject(:joke) { build(:joke) }
+
+  describe 'validations' do
+    it { is_expected.to validate_presence_of(:story) }
+    it { is_expected.to validate_presence_of(:minute_mark) }
+  end
 end

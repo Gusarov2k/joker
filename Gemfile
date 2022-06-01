@@ -58,4 +58,5 @@ end
 gem 'interactor-rails', '~> 2.2'
 gem 'net-smtp', require: false
 gem 'nokogiri', '~> 1.13', '>= 1.13.6'
+gem 'rack-attack'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

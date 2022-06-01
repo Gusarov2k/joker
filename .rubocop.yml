@@ -23,12 +23,18 @@ Style/Documentation:
 Style/AsciiComments:
   Enabled: false
 
+Style/GuardClause:
+  Exclude:
+    - app/interactors/write_jokes.rb
+
 Metrics/LineLength:
   Enabled: true
   Max: 120
 
 Metrics/AbcSize:
   Max: 35
+  Exclude:
+    - app/interactors/get_jokes.rb
 
 Metrics/BlockLength:
   Max: 40
@@ -36,7 +42,7 @@ Metrics/BlockLength:
     - spec/**/*
 
 Metrics/MethodLength:
-  Max: 15
+  Max: 20
 
 Lint/EmptyBlock:
   Enabled: false
