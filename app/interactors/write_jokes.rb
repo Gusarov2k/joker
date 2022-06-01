@@ -15,7 +15,7 @@ class WriteJokes
         break if first_element >= context.jokes.size || (first_element + 4) >= context.jokes.size
 
         context.jokes[first_element..first_element + 4].each do |joke|
-          Joke.create(story: joke, minute_mark: time_mark + 1)
+          Joke.create(story: joke, minute_mark: time_mark)
         end
 
         first_element += 5
