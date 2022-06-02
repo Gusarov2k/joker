@@ -39,7 +39,6 @@ group :test do
   gem 'database_cleaner-active_record'
   gem 'factory_bot_rails', '~> 6.0'
   gem 'faker'
-  gem 'faker-russian'
   gem 'json_matchers'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false

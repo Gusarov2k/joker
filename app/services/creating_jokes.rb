@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateJokes
+class CreatingJokes
   include Interactor::Organizer
 
   organize ParseJokes, WriteJokes

@@ -19,7 +19,10 @@ class GetJokes
     end
 
     jokes = Joke.where(minute_mark: Rails.cache.read("#{context.ip}_last_range"))
+    current_joke = jokes[Rails.cache.read("#{context.ip}_count_request") - 1]
 
-    context.joke = jokes[Rails.cache.read("#{context.ip}_count_request") - 1]
+    return context.fail!(error: I18n.t('messages.joke_not_find')) if current_joke.nil?
+
+    context.joke = current_joke
   end
 end

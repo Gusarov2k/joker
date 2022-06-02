@@ -1,3 +1,4 @@
 en:
   messages:
     empty_jokes: 'Empty jokes'
+    joke_not_find: 'Joke not find'

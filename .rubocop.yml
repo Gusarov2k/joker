@@ -44,6 +44,14 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Max: 20
 
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - app/interactors/get_jokes.rb
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - app/interactors/get_jokes.rb
+
 Lint/EmptyBlock:
   Enabled: false
 

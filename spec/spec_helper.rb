@@ -2,6 +2,9 @@
 
 require 'simplecov'
 SimpleCov.start 'rails' do
+  add_group 'interactors', 'app/interactors'
+  add_group 'services', 'app/services'
+
   add_filter do |source_file|
     source_file.lines.count < 5
   end
